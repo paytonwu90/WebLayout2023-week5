@@ -1,0 +1,23 @@
+.link-black {
+  $link-color: $body-color;
+  color: $link-color;
+  transition: color .15s ease;
+  &:hover {
+    color: shift-color($link-color, -$link-shade-percentage*2);
+  }
+}
+
+.text-black-hover-primary {
+  color: $body-color;
+  &:hover {
+    color: $primary;
+  }
+}
+
+.hover-circle {
+  border-radius: 50%;
+  transition: background-color .15s ease;
+  &:hover {
+    background-color: $gray-200;
+  }
+}

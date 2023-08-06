@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>index</title>
+    <%- include('./layout/stylesheets'); -%>
+  </head>
+  <body>
+    <div class="d-flex align-items-start">
+      <%- include('./layout/menu'); -%>
+      <div class="flex-grow-1">
+        <%- include('./layout/header'); -%>
+
+        <div class="pt-4 pb-14 px-8">
+          <table class="table table-hover mb-0">
+            <thead>
+              <tr class="border-black">
+                <th class="d-flex align-items-center">ID<a href="#" class="ms-1"><span class="material-icons d-block fs-2">arrow_downward</span></a>  </th>
+                <th>Name</th>
+                <th>Email</th>
+                <th>Verified</th>
+                <th></th>
+              </tr>
+            </thead>
+            <%- include('./pages/table-row', {id: 1, name: 'Emir Wicks', email: 'emir.wicks@mail.com', verified: 'Yes'}); -%>
+            <%- include('./pages/table-row', {id: 2, name: 'Zaina Goldsmith', email: 'zaina.goldsmith@mail.com', verified: 'Yes'}); -%>
+            <%- include('./pages/table-row', {id: 3, name: 'Mahima Lopez', email: 'mahima.lopez@mail.com', verified: 'Yes'}); -%>
+            <%- include('./pages/table-row', {id: 4, name: 'Pharrell Murray', email: 'pharrell.murray@mail.com', verified: 'Yes'}); -%>
+            <%- include('./pages/table-row', {id: 5, name: 'Annika Mcbride', email: 'annika.mcbride@mail.com', verified: 'Yes'}); -%>
+            <%- include('./pages/table-row', {id: 6, name: 'Fatimah Clark', email: 'fatimah.clark@mail.com', verified: 'Yes'}); -%>
+            <%- include('./pages/table-row', {id: 7, name: 'Klaudia Rhodes', email: 'klaudia.rhodes@mail.com', verified: 'Yes'}); -%>
+            <%- include('./pages/table-row', {id: 8, name: 'Tillie Lucero', email: 'tillie.lucero@mail.com', verified: 'Yes'}); -%>
+            <%- include('./pages/table-row', {id: 9, name: 'Sabrina Stephenson', email: 'sabrina.stephenson@mail.com', verified: 'Yes'}); -%>
+            <%- include('./pages/table-row', {id: 10, name: 'Annie Smith', email: 'annie.smith@mail.com', verified: 'Yes'}); -%>
+          </table>
+        </div>
+
+        <nav aria-label="Page navigation">
+          <ul class="pagination justify-content-end px-8 mb-8">
+            <li class="page-item">
+              <a class="page-link p-2" href="#" aria-label="Previous">
+                <span class="d-block material-icons fs-2">keyboard_arrow_left</span>
+              </a>
+            </li>
+            <li class="page-item"><span class="page-link active" href="#">1</span></li>
+            <li class="page-item"><a class="page-link" href="#">2</a></li>
+            <li class="page-item"><a class="page-link" href="#">3</a></li>
+            <li class="page-item">
+              <a class="page-link p-2" href="#" aria-label="Next">
+                <span class="d-block material-icons fs-2">keyboard_arrow_right</span>
+              </a>
+            </li>
+          </ul>
+        </nav>
+      </div>
+    </div>
+
+    <script type="module" src="../main.js"></script>
+  </body>
+</html>
